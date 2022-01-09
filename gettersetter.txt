@@ -1,0 +1,37 @@
+getter
+-------
+var myCar = { 
+    Color: "blue", 
+    name: "Toyota",
+    get color() { 
+         return this.Color; 
+    }, 
+    get name() { 
+         return this.name; 
+    }    
+};
+myCar.color;
+myCar.name;
+
+setter
+-----------
+var myCar = {
+    defColor: "blue", 
+    defMake: "Toyota",
+    get color() { 
+         return this.defColor; 
+    }, 
+    get make() { 
+         return this.defMake; 
+    },
+    set color(newColor) {
+	this.defColor = newColor;
+    },
+    set make(newMake) {
+	this.defMake = newMake;
+    }
+};
+myCar.color = "red";
+myCar.make = "Audi";
+myCar.color;
+myCar.make;
