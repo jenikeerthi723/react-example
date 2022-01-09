@@ -1,0 +1,20 @@
+function Hoisting(){
+  x = 100;
+  let y = 200;
+}
+Hoisting();
+console.log(x);
+console.log(y);
+
+----------------------
+
+class car{
+  constructor(height, weight) {
+    this.height = height;
+    this.weight = weight;
+  }
+}
+var car1 = new car();
+car1.height = 5;
+car1.weight = 500;
+console.log(car1);
